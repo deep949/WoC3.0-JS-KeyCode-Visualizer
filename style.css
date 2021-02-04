@@ -1,0 +1,49 @@
+.in
+{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    font-family: monospace;
+    line-height: 1.4;
+    font-size: 25px;
+    margin-left:auto;
+    display: inline-block;
+}
+head
+{
+  align-items: baseline;
+}
+  pre 
+{
+  text-align: left;
+}
+
+h1
+{
+  text-align:center ;
+}
+
+body
+{
+  background-color: rgba(104, 117, 119, 0.144);
+  text-align:center;
+}
+.in
+{
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+p
+{
+  text-align:center;
+}
+.info
+{
+  margin: auto;
+  font-weight: bold;
+  font-family:monospace;
+  font-style: oblique;
+}

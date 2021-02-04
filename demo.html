@@ -1,17 +1,34 @@
 <!DOCTYPE html>
 <html>
-<title>checkpoint 2</title>
+<head>
+<title>checkpoint 3</title>
 <h1>WoC3.0</h1>
+<p id="1">Press any key to hide the table and get it's details.</p>
+<link rel = "stylesheet" href="style.css">
+</head>
 <body>
-<table id = "head">
-    <thead>
-        <tr style="background-color: #87CEFA;">
-            <th>Keycode</th>
-            <th>Key</th>
-        </tr>
-    </thead>
-    <tbody id="add_data_here"></tbody>
-</table>
+    <div class="input">
+    <input onkeydown = "hide(event)" id="abc">
+    </div>
+    <br>
+    <br>
+    <div class = "in">
+        <table id = "head" width="50%">
+        <thead>
+            <tr style="background-color: #87CEFA;">
+                <th>Keycode</th>
+                <th>Key</th>
+            </tr>
+        </thead>
+        <tbody id="add_data_here"></tbody>
+        </table>
+    </div>
+    <button type="button" id="show">Table</button>
+    <br>
+
+    <div id="info">
+        
+    </div>
 <script src = "data.js"></script>
 </body>
 </html>

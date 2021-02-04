@@ -192,3 +192,38 @@ for (let i in keyCodes) {
 
 const table = document.getElementById("add_data_here");
 table.innerHTML = output;
+
+document.getElementById("show").style.visibility = 'hidden';
+
+function hide(event)
+{
+    document.getElementById("head").style.display = "none";
+    document.getElementById("abc").style.display = "none";
+    document.getElementById("1").style.display = "none"
+    
+   document.addEventListener("keydown", function(event) {
+  
+    //console.log(event);
+      
+    document.getElementById("info").innerHTML = `<br>
+      <b>keycode: ${event.keyCode}</b><br>
+      <b>shiftkey: ${event.shiftKey}</b><br>
+      <b>controlkey: ${event.ctrlKey}</b><br>
+      <b>altkey: ${event.altKey}</b><br>
+      <b>metakey: ${event.metaKey}</b><br>
+      <b>key: ${event.key}</b><br>
+      `});
+    
+    document.getElementById("show").style.visibility = 'visible';
+    let t = document.getElementById("show");
+    t.addEventListener("click",showTable);
+
+    function showTable()
+    {
+        document.getElementById("head").style.display = "table";
+        document.getElementById("show").style.display = "none";
+        document.getElementById("info").style.display = "none";
+    }
+}
+
+
